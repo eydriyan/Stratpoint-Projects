@@ -12,26 +12,36 @@ public class Main {
 
         while(true) {
             // Prompt user to select an operation
-            System.out.println(" ");
-            System.out.println("=========Select an Operation=======");
+            System.out.println("-------------------------------------------------");
+            System.out.println("\t\tSimple Console-Based Calculator");
+            System.out.println("-------------------------------------------------");
+            System.out.println("\t\t\t\tSelect an Option");
             System.out.println("[0]Exit");
             System.out.println("[1]Add");
             System.out.println("[2]Subtract");
             System.out.println("[3]Multiply");
             System.out.println("[4]Divide");
+            System.out.println("-------------------------------------------------");
             System.out.print("Enter choice: ");
 
             // Read the selected operation from the user
             String operation = scan.next();
 
+            System.out.println("-------------------------------------------------");
+
+
             // Check for invalid operations
             if(!operation.equals("0") && !operation.equals("1") && !operation.equals("2") && !operation.equals("3") && !operation.equals("4")) {
                 System.out.println("Invalid operation. Try again.");
+                System.out.println("-------------------------------------------------");
+                // Add space below
+                System.out.println(" ");
                 continue;
             }
 
             // Check if user wants to exit
             if(operation.equals("0")) {
+                System.out.println("Exited.");
                 break;
             }
 
@@ -43,6 +53,8 @@ public class Main {
                 // Prompt user to enter second number
                 System.out.print("Enter second number: ");
                 double num2 = scan.nextDouble();
+
+                System.out.println("=================================================");
 
                 // Initialize result variable
                 double result = 0;
@@ -64,13 +76,25 @@ public class Main {
                 }
                 // Display result
                 System.out.println("Result: " + result);
+                System.out.println("=================================================");
+                // Add space below
+                System.out.println(" ");
+
             } catch (ArithmeticException ex) {
                 // Handle division by zero
                 System.out.println("Error: " + ex.getMessage());
+                System.out.println("=================================================");
+                // Add space below
+                System.out.println(" ");
             } catch (Exception ex) {
-                // Handle invalid input and clear it from the scanner
+                // Handle invalid input
+                System.out.println("=================================================");
                 System.out.println("Invalid input. Enter valid numbers.");
+                System.out.println("=================================================");
+                // Clear invalid input from scanner
                 scan.next();
+                // Add space below
+                System.out.println(" ");
             }
         }
         // Close the scanner

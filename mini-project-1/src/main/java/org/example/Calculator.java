@@ -2,10 +2,6 @@ package org.example;
 
 public class Calculator {
 
-    public Calculator() {
-        System.out.println("===============WELCOME=============");
-    }
-
     // Method for addition
     public double add(double num1, double num2) {
         return num1 + num2;
