@@ -26,9 +26,7 @@ public class Main {
 
             // Read the selected operation from the user
             String operation = scan.next();
-
             System.out.println("-------------------------------------------------");
-
 
             // Check for invalid operations
             if(!operation.equals("0") && !operation.equals("1") && !operation.equals("2") && !operation.equals("3") && !operation.equals("4")) {
@@ -79,7 +77,6 @@ public class Main {
                 System.out.println("=================================================");
                 // Add space below
                 System.out.println(" ");
-
             } catch (ArithmeticException ex) {
                 // Handle division by zero
                 System.out.println("Error: " + ex.getMessage());
