@@ -1,5 +1,3 @@
-# Mini project 1
-
 # Mini project 2
 ## Library Management System
 
@@ -55,7 +53,7 @@ Manages a collection of `Book` objects with the following methods:
 ### Running the Application
 
 1. Clone the repository:
-2. Navigate to the project directory:
+2. Navigate to the project directory
 3. Compile the Java files
 4. Run the application
 
