@@ -23,9 +23,9 @@ The base class representing a book with the following attributes and methods:
 
 ### `PhysicalBook` Class
 A subclass of `Book` representing a physical book with an additional attribute:
-- `pages`: Number of pages in the book
+- `noOfPages`: Number of pages in the book
 - Constructor to initialize the attributes, including those of the base class
-- Getter and setter methods for the `pages` attribute
+- Getter and setter methods for the `noOfPages` attribute
 - Overridden `displayInformation()` method to display book details, including the number of pages
 
 ### `EBook` Class
