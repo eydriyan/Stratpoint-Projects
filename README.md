@@ -7,7 +7,7 @@ A simple console-based Library Management System in Java that allows users to ad
 
 ## Features
 
-- Add books (both printed and e-books)
+- Add books (both physical and e-books)
 - Remove books
 - Search books by title
 - Search books by author
