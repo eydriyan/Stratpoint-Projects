@@ -6,6 +6,15 @@ public class Library {
 
     ArrayList<Book> books = new ArrayList<Book>();
 
+    // Getter and Setter
+    public ArrayList<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(ArrayList<Book> books) {
+        this.books = books;
+    }
+
     // Method for adding book
     public void addBook(Book book) {
         for(Book element : books) {
