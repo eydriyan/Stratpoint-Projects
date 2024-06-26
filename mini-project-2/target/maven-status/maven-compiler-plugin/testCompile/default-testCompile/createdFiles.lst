@@ -1,4 +1,4 @@
-org\library\BookTest.class
-org\library\PhysicalBookTest.class
-org\library\EBookTest.class
-org\library\LibraryTest.class
+org\AdrianOraya\LibraryTest.class
+org\AdrianOraya\PhysicalBookTest.class
+org\AdrianOraya\EBookTest.class
+org\AdrianOraya\BookTest.class
