@@ -22,8 +22,11 @@ This Java program implements a basic console-based calculator with operations fo
 5. Follow the on-screen prompts:
 
 Select an operation (Add, Subtract, Multiply, Divide).
+
 Enter the first number.
+
 Enter the second number.
+
 View the result of the operation.
 
 6. Exit the program:
