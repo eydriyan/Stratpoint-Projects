@@ -1,8 +1,12 @@
 package org.AdrianOraya;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Scanner;
 
 public class Main {
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
         // Create a scanner object
         Scanner scan = new Scanner(System.in);
@@ -33,6 +37,7 @@ public class Main {
 
             // Check if user wants to exit
             if(choice.equals("0")) {
+                logger.info("Exit Success");
                 System.out.println("Exited.");
                 break;
             }
@@ -81,11 +86,13 @@ public class Main {
                         library.showAllBooks();
                         break;
                     default:
+                        logger.info("Invalid Choice");
                         System.out.println("Invalid choice. Try again.");
                         System.out.println("-------------------------------------------------");
                 }
                 // Handle invalid input
             }catch (Exception ex){
+                logger.info("Invalid Input");
                 System.out.println("=================================================");
                 System.out.println("Invalid input. Please try again.");
                 System.out.println("=================================================");
