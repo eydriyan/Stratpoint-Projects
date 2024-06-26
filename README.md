@@ -1,10 +1,11 @@
 
 <details>
-<summary>Mini project 2</summary>
+<summary>Mini project 1</summary>
 </details>
 
 <details>
 <summary>Mini project 2</summary>
+  
 ## Library Management System
 
 A simple console-based Library Management System in Java that allows users to add, remove, search, and view books. The system supports both physical books and e-books, demonstrating basic Object-Oriented Programming (OOP) principles like encapsulation, inheritance, and polymorphism.
