@@ -1,3 +1,9 @@
+
+<details>
+# Mini project 2
+</details>details>
+
+<details>
 # Mini project 2
 ## Library Management System
 
@@ -68,3 +74,5 @@ When you run the application, you will see a menu with the following options:
 [5] List All Books
 
 Follow the prompts to interact with the system. Enter the corresponding number to select an option, and provide the required information when prompted.
+
+</details>
