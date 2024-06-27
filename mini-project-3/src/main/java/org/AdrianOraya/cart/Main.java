@@ -3,8 +3,11 @@ package org.AdrianOraya.cart;
 import java.util.Arrays;
 import java.util.Optional;
 import java.util.Scanner;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Main {
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
         // Create scanner object
         Scanner scan = new Scanner(System.in);
@@ -44,6 +47,7 @@ public class Main {
             // Check if user wants to exit
             if(choice.equals("0")) {
                 System.out.println("Exited.");
+                logger.info("Exit Success");
                 break;
             }
 
@@ -53,6 +57,7 @@ public class Main {
                     case "1":
                         System.out.println("\t\t\t\t\tAVAILABLE PRODUCTS");
                         Arrays.stream(products).forEach(product -> System.out.println(product));
+                        logger.info("Viewed available products.");
                         break;
                     case "2":
                         System.out.println("\t\t\t\t\tADD PRODUCT TO CART");
@@ -69,9 +74,11 @@ public class Main {
                                 cart.addToCart(new Product(selectedProduct.get().getId(), selectedProduct.get().getName(), selectedProduct.get().getPrice(), quantity, selectedProduct.get().getCategory()));
                             } else {
                                 System.out.println("Invalid quantity.");
+                                logger.info("Entered an Invalid quantity");
                             }
                         } else {
                             System.out.println("Product does not exist.");
+                            logger.info("The product ID entered does not exist");
                         }
                         break;
                     case "3":
@@ -81,15 +88,18 @@ public class Main {
                     case "4":
                         System.out.println("\t\t\t\t\tTOTAL PRICE OF ITEMS");
                         System.out.printf("Total Price: %.2f\n", cart.totalPrice());
+                        logger.info("Viewed the total price of items");
                         break;
                     default:
                         System.out.println("Invalid choice. Try again.");
+                        logger.info("Entered an invalid choice");
                         System.out.println("-------------------------------------------------");
                 }
             // Handle invalid input
             }catch (Exception ex){
                 System.out.println("-------------------------------------------------");
                 System.out.println("Invalid input. Please try again.");
+                logger.info("Entered an invalid input");
                 System.out.println("-------------------------------------------------");
                 // Clear invalid input from scanner
                 scan.next();
