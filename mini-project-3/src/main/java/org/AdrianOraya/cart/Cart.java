@@ -8,7 +8,7 @@ import java.util.Optional;
 /**
  * Represents a shopping cart that can hold products.
  */
-public class Cart {
+public class Cart implements ICart {
 
     // Create list object
     ArrayList<Product> products = new ArrayList<Product>();
