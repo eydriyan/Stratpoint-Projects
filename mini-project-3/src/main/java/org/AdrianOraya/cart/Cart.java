@@ -51,7 +51,8 @@ public class Cart {
      */
     public void viewCart() {
         if(!products.isEmpty()) {
-            products.forEach(product -> System.out.println(product));
+            System.out.printf("%-5s %-15s %-10s %-10s %-15s%n", "ID", "Name", "Price", "Quantity", "Category");
+            products.forEach(product -> System.out.printf("%-5d %-15s %-10.2f %-10d %-15s%n", product.getId(), product.getName(), product.getPrice(), product.getQuantity(), product.getCategory()));
             logger.info("Viewed cart items");
         }else {
             System.out.println("The cart is empty.");

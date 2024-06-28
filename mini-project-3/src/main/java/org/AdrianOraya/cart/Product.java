@@ -132,22 +132,4 @@ public class Product {
     public void setCategory(String category) {
         this.category = category;
     }
-
-    /**
-     * Returns a string representation of the product including id, name, price, quantity, and category.
-     *
-     * @return A string representation of the product.
-     */
-    @Override
-    public String toString() {
-        return String.format("ID: %d, Name: %s, Price: %.2f, Quantity: %d, Category: %s", id, name, price, quantity, category);
-    }
-
-    /**
-     * Displays brief information about the product to be displayed as choices including id, name, price, and category.
-     */
-    public void displayInformation() {
-        System.out.printf("ID: %d, Name: %s, Price: %.2f, Category: %s%n", id, name, price, category);
-    }
-
 }

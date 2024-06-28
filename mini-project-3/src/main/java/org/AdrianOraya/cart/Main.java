@@ -30,23 +30,23 @@ public class Main {
 
         while(true) {
             // Prompt user to select an action
-            System.out.println("\n-------------------------------------------------");
-            System.out.println("\t\t\tE-commerce Cart System");
-            System.out.println("-------------------------------------------------");
-            System.out.println("\t\t\t\tSelect an Option");
+            System.out.println("\n--------------------------------------------------------");
+            System.out.println("\t\t\t\tE-commerce Cart System");
+            System.out.println("--------------------------------------------------------");
+            System.out.println("\t\t\t\t\tSelect an Option");
             System.out.println("[0] Exit");
             System.out.println("[1] View Products");
             System.out.println("[2] Add Product to Cart");
             System.out.println("[3] View Cart");
             System.out.println("[4] Calculate Total Price");
-            System.out.println("-------------------------------------------------");
+            System.out.println("--------------------------------------------------------");
             System.out.print("Enter choice: ");
 
             // Read the selected choice from the user
             String choice = scan.next();
             // Consume new line left-over
             scan.nextLine();
-            System.out.println("-------------------------------------------------");
+            System.out.println("--------------------------------------------------------");
 
             // Check if user wants to exit
             if(choice.equals("0")) {
@@ -60,7 +60,8 @@ public class Main {
                 switch(choice) {
                     case "1":
                         System.out.println("\t\t\t\t\tAVAILABLE PRODUCTS");
-                        Arrays.stream(products).forEach(product -> System.out.println(product));
+                        System.out.printf("%-6s %-19s %-15s %-17s%n", "ID", "Name", "Price", "Category");
+                        Arrays.stream(products).forEach(product -> System.out.printf("%-6d %-19s %-15.2f %-17s%n", product.getId(), product.getName(), product.getPrice(), product.getCategory()));
                         logger.info("Viewed available products.");
                         break;
                     case "2":
@@ -86,7 +87,7 @@ public class Main {
                         }
                         break;
                     case "3":
-                        System.out.println("\t\t\t\t\tCART ITEMS");
+                        System.out.println("\t\t\t\t\t\tCART ITEMS");
                         cart.viewCart();
                         break;
                     case "4":
@@ -97,14 +98,13 @@ public class Main {
                     default:
                         System.out.println("Invalid choice. Try again.");
                         logger.info("Entered an invalid choice");
-                        System.out.println("-------------------------------------------------");
-                }
+                        System.out.println("--------------------------------------------------------");                }
             // Handle invalid input
             }catch (Exception ex){
-                System.out.println("-------------------------------------------------");
+                System.out.println("--------------------------------------------------------");
                 System.out.println("Invalid input. Please try again.");
                 logger.info("Entered an invalid input");
-                System.out.println("-------------------------------------------------");
+                System.out.println("--------------------------------------------------------");
                 // Clear invalid input from scanner
                 scan.next();
             }
