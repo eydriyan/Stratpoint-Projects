@@ -6,7 +6,11 @@ import java.util.Scanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * The Main class that demonstrates an e-commerce cart system.
+ */
 public class Main {
+    // Create logger object
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
         // Create scanner object

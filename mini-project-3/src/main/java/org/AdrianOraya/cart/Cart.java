@@ -5,13 +5,22 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.Optional;
 
+/**
+ * Represents a shopping cart that can hold products.
+ */
 public class Cart {
 
     // Create list object
     ArrayList<Product> products = new ArrayList<Product>();
+
+    // Create logger object
     private static final Logger logger = LoggerFactory.getLogger(Cart.class);
 
-    // Method to add product to cart
+    /**
+     * Adds a product to the cart. If the product already exists in the cart, its quantity is updated.
+     *
+     * @param product The product to add to the cart.
+     */
     public void addToCart(Product product) {
         Optional<Product> existingProduct = products.stream()
                 .filter(p -> p.getId() == product.getId())
@@ -26,14 +35,20 @@ public class Cart {
         logger.info(product.getName() + " Successfully added to cart!");
     }
 
-    // Method to calculate the total price
+    /**
+     * Calculates the total price of all products in the cart.
+     *
+     * @return The total price of all products in the cart.
+     */
     public double totalPrice() {
         return products.stream()
                 .mapToDouble(product -> product.getPrice() * product.getQuantity())
                 .sum();
     }
 
-    // Method to view all products in cart
+    /**
+     * Displays all products currently in the cart.
+     */
     public void viewCart() {
         if(!products.isEmpty()) {
             products.forEach(product -> System.out.println(product));
