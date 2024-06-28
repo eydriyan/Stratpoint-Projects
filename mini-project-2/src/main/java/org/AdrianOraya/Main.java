@@ -5,7 +5,11 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Scanner;
 
+/**
+ * The Main class that demonstrates a library management system.
+ */
 public class Main {
+    // Create logger object
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
         // Create a scanner object
