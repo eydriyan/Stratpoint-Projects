@@ -46,7 +46,7 @@ public class Main {
                 // Perform operation based on user input
                 switch(choice) {
                     case "1":
-                        System.out.println("\t\t\t\t\tADD A PHYSICAL BOOK");
+                        System.out.println("\t\t\t\tADD A PHYSICAL BOOK");
                         System.out.print("Enter title: ");
                         String physicalBookTitle = scan.nextLine();
                         System.out.print("Enter Author: ");
@@ -82,7 +82,7 @@ public class Main {
                         library.searchBook(titleToSearch);
                         break;
                     case "5":
-                        System.out.println("\t\t\t\t\tLIST OF ALL BOOKS");
+                        System.out.println("\t\t\t\tLIST OF ALL BOOKS");
                         library.showAllBooks();
                         break;
                     default:

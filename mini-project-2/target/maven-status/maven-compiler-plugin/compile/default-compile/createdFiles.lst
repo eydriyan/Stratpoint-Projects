@@ -1,5 +1,6 @@
 org\AdrianOraya\EBook.class
 org\AdrianOraya\Book.class
+org\AdrianOraya\ILibrary.class
+org\AdrianOraya\Main.class
 org\AdrianOraya\PhysicalBook.class
 org\AdrianOraya\Library.class
-org\AdrianOraya\Main.class

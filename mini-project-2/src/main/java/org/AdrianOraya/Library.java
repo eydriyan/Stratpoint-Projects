@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Library {
+public class Library implements ILibrary {
 
     ArrayList<Book> books = new ArrayList<Book>();
     private static final Logger logger = LoggerFactory.getLogger(Library.class);
@@ -60,6 +60,7 @@ public class Library {
         System.out.println("Book not Found!");
     }
 
+    // Method to show all books
     public void showAllBooks() {
         if(!books.isEmpty()) {
             for (Book book : books){
