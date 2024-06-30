@@ -90,7 +90,7 @@ Manages a collection of `Book` objects with the following methods:
 
 ### Running the Application
 
-1. Clone the repository:
+1. Clone the repository
 2. Navigate to the project directory
 3. Compile the Java files
 4. Run the application
@@ -108,6 +108,79 @@ When you run the application, you will see a menu with the following options:
 [4] Search Book by Title
 
 [5] List All Books
+
+Follow the prompts to interact with the system. Enter the corresponding number to select an option, and provide the required information when prompted.
+
+</details>
+
+<details>
+<summary>Mini project 3</summary>
+
+  # E-commerce Cart System
+
+A simple console-based E-commerce Cart System in Java that allows users to view products, add products to a cart, view the cart, and calculate the total price of items in the cart. The system demonstrates basic Object-Oriented Programming (OOP) principles and utilizes lambda expressions, java generics, and Java best practices.
+## Features
+
+- View available products
+- Add products to the cart
+- View items in the cart
+- Calculate the total price of items in the cart
+
+## Classes and Methods
+
+### Product Class
+
+Represents a product with the following attributes and methods:
+
+- **Attributes:**
+  - `id`: Unique identifier of the product
+  - `name`: Name of the product
+  - `price`: Price of the product
+  - `quantity`: Quantity of the product
+  - `category`: Category of the product
+
+- **Methods:**
+  - Constructor to initialize the attributes
+  - Getter and setter methods for each attribute
+
+### Cart Class
+
+Manages a collection of Product objects in the shopping cart with the following methods:
+
+- `addToCart(Product product)`: Adds a product to the cart. If the product already exists in the cart, its quantity is updated.
+- `totalPrice()`: Calculates and returns the total price of all products in the cart.
+- `viewCart()`: Displays the contents of the shopping cart.
+
+### Main Class
+
+The entry point of the application that demonstrates the e-commerce cart system functionality. It provides a menu for the user to interact with the system.
+
+## Getting Started
+
+### Prerequisites
+
+- Java Development Kit (JDK) 8 or higher
+- A Java IDE or text editor (e.g., IntelliJ IDEA, Eclipse, VS Code)
+
+### Running the Application
+
+1. Clone the repository
+2. Navigate to the project directory
+3. Compile the Java files
+4. Run the application
+
+When you run the application, you will see a menu with the following options:
+
+[0] Exit
+
+[1] View Products
+
+[2] Add Product to Cart
+
+[3] View Cart
+
+[4] Calculate Total Price
+
 
 Follow the prompts to interact with the system. Enter the corresponding number to select an option, and provide the required information when prompted.
 
